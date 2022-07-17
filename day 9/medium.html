@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(10751.png);
+    }
+.game{
+      padding-top: 30rem;
+      padding-left: 60rem;
+}
+h1{
+    padding-left: 13rem;
+    padding-bottom: 10rem;
+    font-size: 50px;
+}
+p{
+    font-size: 35px;
+}
+#word{
+    width: 50%;
+    height: 5rem;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    font-size: 40px;
+    padding-left: 2rem;
+    
+}
+button{
+margin-top: 5rem;
+margin-left: 15rem;
+width: 25rem;
+height: 3rem;
+border-radius: 50px;
+font-size: 30px;
+background-color: rgb(185, 131, 131);
+color: black;
+
+}
+button:hover{
+    background-color: rgb(242, 108, 108);
+}
+h3{
+     padding-top: 2rem;
+     height: 5rem;
+     width: 20%;
+     text-align: center;
+     background-color: rgb(185, 131, 131);
+     border-radius: 40px;
+     margin-left: 17rem;
+     font-size: 20px;
+}
+</style>
+<body>
+    <div class="game">
+    <h1>Medium level!</h1>
+    <p>I am thinking of a word Can you guess what it is?</p>
+    <input type="text" id="word"><br>
+  <button id="met">Guess</button>
+ <maquee><h3>H**t: normal words</h3></maquee> 
+</div>
+</body>
+
+<script>
+    let ny = document.getElementById("met")
+let myGuess = document.getElementById("word")
+ny.addEventListener("click", checkGuess)
+let randomWord = ["Right","happy", "fuck",
+"the", "of", "and", "a", "to", "in", "is", "you", "that", "it", 
+"he", "was", "for", "on", "are", "as", "with", "his", "they","I", "at", 
+"be","this", "have", "from", "or", "one", "had", "by", "word", "but","not",
+"what", "all", "were", "we", "when", "your", "can", "said", "there",
+"use", "an", "each", "which", "she", "do", "how", "their", "if", 
+"will","up", "other", "about", "out", "many", "then", "them",
+"these", "so","some", "her", "would", "make", "like", "him", "into", "time", "has",
+ "look", "two", "more", "write", "go", "see", "number", "no", "way",
+"could", "people", "my", "than", "first", "water", "been", "call",
+"who", "oil", "its", "now", "find", "long", "down", "day", "did", 
+"get", "come", "made", "may", "part"];
+function checkGuess(){
+    if (randomWord.indexOf(myGuess.value) > -1){
+        
+        window.alert("You got it right")
+    }
+    else {
+       window.alert("odeh olodo ni e")
+    }
+}
+
+</script>
+
+
+
+
+</html>

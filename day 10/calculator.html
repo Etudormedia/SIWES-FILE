@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.parent_con{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+    width: 50%;
+    height: 50%;
+    
+}
+.container2{
+ width: 10rem;
+ height: 5rem;
+ padding-top: 5rem;
+ border-radius: 5rem;
+}
+</style>
+<body>
+    <div class="parent_con">
+    <div class="container">
+    <input type="text" id="n1" placeholder="Enter a number......">
+    <input type="text" id="n2" placeholder="Enter a number......">
+    <input type="text" id="n3" placeholder="Enter a number......">
+</div>
+<div class="container2">
+    <button onclick="add()">+</button>
+    <button onclick="sub()"> -</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mol()">%</button>
+    <button onclick="amty()">Almt</button>
+    <button onclick="area()">Area</button>
+</div>
+    <span>Here is your result</span>
+    <p id="result">Result1</p>
+    <p id="resultt">Result2</p>
+</div>
+</body>
+<script>
+    function add(){
+       var fn, ln, result;
+       fn =parseInt(document.getElementById("n1").value)
+       ln =parseInt(document.getElementById("n2").value)
+        result = (fn + ln);
+        document.getElementById('result').innerHTML = result;
+
+    }
+    function sub(){
+       var an, lk, result;
+       an =parseInt(document.getElementById("n1").value);
+      lk =parseInt(document.getElementById("n2").value);
+        result = (an - lk);
+        document.getElementById('result').innerHTML = result;
+    }
+    function mul(){
+       var vn, lk, result;
+       vn =parseInt(document.getElementById("n1").value);
+       kl =parseInt(document.getElementById("n2").value);
+        result = (vn * kl);
+        document.getElementById('result').innerHTML = result;
+    }
+    function div(){
+       var bl, lb, result;
+       bl =parseInt(document.getElementById("n1").value);
+       lb =parseInt(document.getElementById("n2").value);
+        result = (bl / lb);
+        document.getElementById('result').innerHTML = result;
+    }
+    function mol(){
+       var aa, bb, result;
+       aa =parseInt(document.getElementById("n1").value);
+       bb =parseInt(document.getElementById("n2").value);
+        result = (aa % bb);
+        document.getElementById('result').innerHTML = result;
+    }
+    function area(){
+       var nn, bbm, result;
+       nn =parseInt(document.getElementById("n1").value);
+       bbm =parseInt(document.getElementById("n2").value);
+        result = (nn*bbm/2);
+        document.getElementById('result').innerHTML = result;
+    }
+    function amty(){
+       var a, b,c, result,result2;
+       a =parseInt(document.getElementById("n1").value);
+       b =parseInt(document.getElementById("n2").value);
+       c =parseInt(document.getElementById("n3").value);
+       
+        result =Math.floor( (-1*b) + Math.sqrt((b**2 )- (4*a*c)) / (2 * a).toFixed(3));
+       
+    
+
+          document.getElementById('result').textContent = result;
+
+        
+    
+        result2 = Math.floor( (-1*b) - Math.sqrt((b**2 )- (4*a*c)) / (2 * a).toFixed(3));;
+        
+          document.getElementById('resultt').textContent = result2;
+        
+       
+}
+    
+</script>
+</html>

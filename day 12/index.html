@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <section class="sec">
+        <header>
+            <a href = "#">
+                <img src ="logo.png" alt ="">
+            </a>
+            <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Gallery</a></li>
+            <li><a href = "#">Product</a></li>
+            <li><a href = "#">Whats new</a></li>
+        </header>
+</ul>
+   
+
+    <div class="content">
+        <div class="textbook">
+            <h2>Hi <br><span>There!</span></h2>
+            <p>pepsi is a refreshing, sweet, energy drink
+               <br> boosting and it comes in <br>various flavour. Grab a drink ....
+            </p>
+           <a href="#" >view product</a>
+           <div class="imgbox">
+            <img src="pepsi001.png" alt ="pepsi" class="pepsi">
+           </div>
+        </div>
+        <ul class=" thumb">
+            <li><img src="pepsi001.png" onclick="imgslider('pepsi001.png'); changebgcolor('#0062be')"></li>
+            <li><img src="pepsi002.png"  onclick="imgslider('pepsi002.png'); changebgcolor('#e60c2c')"></li>
+            <li><img src="pepsi003.png"    onclick="imgslider('pepsi003.png'); changebgcolor('black')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="twitter.jfif"></a></li>
+            <li><a href="#"><img src="facebook-like.png"></a></li>
+            <li><a href="#"><img src="1077042.png"></a></li>
+        </ul>
+    </div>
+</section>
+</body>
+<script>
+    function imgslider(slide){
+        document.querySelector('.pepsi').src=slide;
+    }
+    function changebgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+</script>
+</html>

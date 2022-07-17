@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:linear-gradient(rgba(255,255,6,0.6)20%,rgba(20,2,190,0.6)50%,rgba(209, 205, 190, 0.6))30%        ;
+}
+.box{
+    width: 400px;
+    height: 150px;
+    background-color:dodgerblue;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  box-shadow: 8px 6px black;
+  transition: 1s all;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.box1:hover{
+background-color: yellow;
+cursor: pointer;
+transform: rotatex(180deg);
+}
+.box2:hover{
+transform: skew(30deg);
+background-color: red;
+}
+.box3:hover{
+    background-color: pink;
+  transform: scale(1,2); 
+}
+.box4:hover{
+    background-color: beige;
+    transform: matrix(2, 1, -1, 1, 30, 10);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="parent-container">
+    <div class="first">
+        <h1 id="time">00:00:00</h1>
+            <p id="greet">Greetings</p>
+            <span id="name">CEO ETUDOR MEDIA</span>
+            <button class="add_task" onclick="add_task()"> Add Task</button>
+            <button class="view-task" onclick="view_task()" > View Task</button>
+    </div>
+
+    <div class="second" id="second">
+         <h2 id="head">Add Task</h2>
+         <p id="para"> Task</p>
+           <textarea name="" id="text"></textarea>
+             <button class="add-task" onclick="add()">Add Task</button>
+             <button class="close_task" onclick="close_task()">Close</button>
+         
+    </div>
+
+    <div class="third" id="third">
+        <h3>All Task</h3>
+        <p class="text">There are no task yet</p>
+        <ul></ul>
+        <button class="close">Close</button>
+    </div>
+</div>
+
+</body>
+<script src="watch.js"></script>
+</html>
